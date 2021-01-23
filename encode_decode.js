@@ -12,19 +12,7 @@ const encode = (string)=>{
     return result
 }
 
-const decode = (string)=>{
-    const arr = string.split('')
-    let number = null
-    let result = ""
-    for (let i = 0; i < arr.length; i++) {
-        if (i%2===0) {
-            number = arr[i]
-        } else {
-            for (let j = 0; j < number; j++)
-            result += arr[i]
-        }
-    }return result
-}
+
 
 
 const encode = (string)=>{
